@@ -45,6 +45,7 @@ const Home = () => {
                         </div>
                        
                     </Col>           
+                    
                     <Col>
                         <img src={iphone} width="60%" height="100%"></img>
                     </Col>
