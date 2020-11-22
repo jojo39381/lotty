@@ -26,20 +26,22 @@ const Home = () => {
         <div>
             <NavBar></NavBar>
             <Container fluid>
+            
                 <Row style={{marginTop:50}}>
                     <Col style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
                         <div style={{width:"100%"}}>
                             <h1 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>10 Million.</h1>
                             <h1 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>Every Week.</h1>
                             <h1 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>No catch.</h1>
-                            <Form onSubmit={submit}>
+                            {/* <Form onSubmit={submit}>
                             <Form.Group controlId="formGroupEmail">
                             <Form.Control value={contact} onChange={handleChange} type="email" placeholder="Enter email" style={{width:"80%", margin:"0 auto", textAlign:"center"}}/>
                             </Form.Group>
                             <Button variant="primary" type="submit" style={{width:"80%"}}>
                                 Join Waitlist
                             </Button>
-                            </Form>
+                            </Form> */}
+                            <Button type="button" className="vrlps-trigger" style={{width:"60%", fontSize:30}}>I want early access!</Button>
                         </div>
                        
                     </Col>           
