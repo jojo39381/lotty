@@ -7,7 +7,9 @@ import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import Carousel from 'react-bootstrap/Carousel'
 import iphone from './iphone.png'
-
+import fee from './fee.svg'
+import goals from './goals.svg'
+import big from './big.svg'
 const home = () => {
     return (
         <div>
@@ -31,20 +33,52 @@ const home = () => {
                        
                     </Col>           
                     <Col>
-                        <img src={iphone} width="80%" height="100%"></img>
+                        <img src={iphone} width="60%" height="100%"></img>
                     </Col>
                 </Row>
-
-                <h2 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"center",marginTop:50}}>Why Us</h2>
+                <section style={{padding:70}}>
+                <h2 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"center",marginTop:50}}></h2>
                 <Row style={{}}>
+                    <Col>  
+
+                    
+                        <img src={fee} width="100" height="100"></img>
+                        <h2>No Fees</h2>
+                        <p style={{width:"60%", margin:"0 auto"}}>That's right. Lotty is completely free, so you can win without losing money! Win Win!</p>
+
+                        
+                        
+                    </Col>
                     <Col>       
+                        <img src={goals} width="100" height="100"></img>
+                        <h2>Set Goals</h2>
+                        <p style={{width:"60%", margin:"0 auto"}}>Achieve your money goals by choosing where you want to deposit your money. #goals</p>
+                        
+                    </Col>
+                    <Col>       
+                        <img src={big} width="100" height="100"></img>
+                        <h2>Win Big</h2>
+                        <p style={{width:"60%", margin:"0 auto"}}>When is the last time you won a lottery? Lotty makes it easy for you to win money by depositing money.</p>
+                        
+                    </Col>
+               
+
+                </Row>
+                </section>
+                <section style={{backgroundColor:"#F9F9FD", padding:70}}>
+                <h2 style={{fontSize:50, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"center",}}>Why Us</h2>
+                <Row>
+                    <Col>       
+                    
                         <h3>At Lotty, we believe that banking should be fun.</h3>
-                        <h3>Traditional banking actually loses you money due to inflation</h3>
-                        <h3>There needs to be a new way</h3>
+                        <h3>With loans, bills, and debts, we understand how hard it is to save. </h3>
+                        <h3>The average millennial has less than $5000 in their saving accounts.</h3>
+                        <h3>We redesigned saving to make it easy, fun, and profitable.</h3>
                     </Col>
                     
 
                 </Row>
+                </section>
                 <h2 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"center",marginTop:50}}>How it works</h2>
                 <Row style={{}}>
                     <Col>       
