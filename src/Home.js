@@ -10,6 +10,8 @@ import iphone from './iphone.png'
 import fee from './fee.svg'
 import goals from './goals.svg'
 import big from './big.svg'
+import lock from './lock.svg'
+import boring from './boring.svg'
 const home = () => {
     return (
         <div>
@@ -131,6 +133,25 @@ const home = () => {
                         <h2>Nope! No catch.</h2>
                         <h2>Our weekly drawings are funded by banks and sponsors.</h2>
                         <h2>They give us money, and we pass it on to you!</h2>
+                    </Col>
+                </Row>
+                </section> 
+                <section style={{backgroundColor:"white", padding: 50}}>
+                <h2 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"center",marginTop:50}}>Your Money Is Safe With Us</h2>
+                <Row>
+                    <Col>
+                        <div style={{width:"80%", margin:"0 auto", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px", padding:30}}>
+                            <img src={lock} width="100" height="100"></img>
+                            <h2 style={{fontFamily: "Lato, sans-serif"}}>Bank Grade Security</h2>
+                            <p style={{fontSize:20}}>We use multi-factor authetication and 256-bit encryption provided by Plaid as well as our own authentication to secure your money.</p>
+                        </div>
+                    </Col>
+                    <Col>
+                    <div style={{width:"80%", margin:"0 auto", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px", padding:30}}>
+                            <img src={boring} width="100" height="100"></img>
+                            <h2 style={{fontFamily: "Lato, sans-serif"}}>FDIC Insured</h2>
+                            <p style={{fontSize:20}}>You can sleep soundly at night with your money held in accounts that are FDIC insured up to 100 million, so you will never lose your money.</p>
+                        </div>
                     </Col>
                 </Row>
                 </section> 
