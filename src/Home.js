@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState}from 'react'
 import NavBar from './NavBar.js'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -12,7 +12,16 @@ import goals from './goals.svg'
 import big from './big.svg'
 import lock from './lock.svg'
 import boring from './boring.svg'
-const home = () => {
+import {saveEmail} from './actions/save.js'
+const Home = () => {
+    const [contact, setContact] = useState("")
+    function submit(event) {
+        saveEmail(contact)
+        event.preventDefault()
+    }
+    function handleChange(event) {
+        setContact(event.target.value)
+    }
     return (
         <div>
             <NavBar></NavBar>
@@ -23,9 +32,9 @@ const home = () => {
                             <h1 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>10 Million.</h1>
                             <h1 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>Every Week.</h1>
                             <h1 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>No catch.</h1>
-                            <Form>
+                            <Form onSubmit={submit}>
                             <Form.Group controlId="formGroupEmail">
-                            <Form.Control type="email" placeholder="Enter email" style={{width:"80%", margin:"0 auto", textAlign:"center"}}/>
+                            <Form.Control value={contact} onChange={handleChange} type="email" placeholder="Enter email" style={{width:"80%", margin:"0 auto", textAlign:"center"}}/>
                             </Form.Group>
                             <Button variant="primary" type="submit" style={{width:"80%"}}>
                                 Join Waitlist
@@ -150,7 +159,7 @@ const home = () => {
                     <div style={{width:"80%", margin:"0 auto", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px", padding:30}}>
                             <img src={boring} width="100" height="100"></img>
                             <h2 style={{fontFamily: "Lato, sans-serif"}}>FDIC Insured</h2>
-                            <p style={{fontSize:20}}>You can sleep soundly at night with your money held in accounts that are FDIC insured up to 100 million, so you will never lose your money.</p>
+                            <p style={{fontSize:20}}>Our accounts are FDIC insured up to 100 million so that you can sleep soundly at night without any worries.</p>
                         </div>
                     </Col>
                 </Row>
@@ -177,5 +186,5 @@ const home = () => {
     )
 }
 
-export default home
+export default Home
  
