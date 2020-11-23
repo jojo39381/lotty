@@ -43,7 +43,7 @@ const Home = () => {
                                 Join Waitlist
                             </Button>
                             </Form> */}
-                            <Button type="button" className="vrlps-trigger" style={{width:"60%", fontSize:30, backgroundColor:"#0EAD69E6"}}>I want early access!</Button>
+                            <Button type="button" className="vrlps-trigger" style={{width:"60%", fontSize:30, backgroundColor:"#    "}}>I want early access!</Button>
                             
                         </div>
                        

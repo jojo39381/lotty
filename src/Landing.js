@@ -6,6 +6,8 @@ import {saveEmail} from './actions/save.js'
 import {Link} from 'react-router-dom'
 import ReactPixel from 'react-facebook-pixel';
 import $ from 'jquery';
+import history from './history'
+
 const Landing = () => {
     const [contact, setContact] = useState("")
     function submit(event) {
@@ -17,13 +19,15 @@ const Landing = () => {
     }
 
     
-    
-    if(String(window.performance.getEntriesByType("navigation")[0].type) === "back_forward"){
-        window.location.reload(true);
-     }
+   
 
-
+    useEffect(() => {
+        window.onpopstate = e => {
+            window.location.reload()
+         }
+    }, [])
     
+   
     
     return (
         <div>
@@ -45,9 +49,9 @@ const Landing = () => {
                             </Button>
                             </Form> */}
 
-                            <div class='prefinery-form-embed'></div>
+                            <div className='prefinery-form-embed'></div>
 
-                <p style={{marginTop:20}}>Questions? Email us at founders@lotty.ai</p>
+                <p style={{marginTop:20}}>Questions? Email us at <a href="founders@lotty.ai">founders@lotty.ai</a></p>
                 </div>
             </div>
         </div>
