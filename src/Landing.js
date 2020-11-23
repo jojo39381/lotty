@@ -1,9 +1,11 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Logo from './logo.png'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import {saveEmail} from './actions/save.js'
 import {Link} from 'react-router-dom'
+import ReactPixel from 'react-facebook-pixel';
+import $ from 'jquery';
 const Landing = () => {
     const [contact, setContact] = useState("")
     function submit(event) {
@@ -13,9 +15,24 @@ const Landing = () => {
     function handleChange(event) {
         setContact(event.target.value)
     }
+    window.addEventListener( "pageshow", function ( event ) {
+        var historyTraversal = event.persisted || 
+                               ( typeof window.performance != "undefined" && 
+                                    window.performance.navigation.type === 2 );
+        if ( historyTraversal ) {
+          // Handle page restore.
+          window.location.reload();
+        }
+      });
+
+
+    
+    
     return (
-        <div >
-        
+        <div>
+           
+            
+
             <div style={{display:"flex", alignItems:"center", justifyContent:"center", height:"100vh"}}>
                 <div style={{width:"70%"}}>
                 <img src={Logo} width="243" height="135" ></img>

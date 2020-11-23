@@ -7,9 +7,15 @@ const Product = () => {
              <div style={{display:"flex", alignItems:"center", justifyContent:"center", height:"100vh"}}>
                 <div style={{width:"70%"}}>
                     <img src={Logo} width="243" height="135"></img>
-                    <h1 style={{fontSize:50, fontFamily:"Lato, sans-serif"}}>How Does It Work?</h1>
-                    <p style={{fontSize:30, fontFamily:"Lato, sans-serif", fontWeight:300}}>Lotty is mobile banking app that wants to help you save money. Every week, we host a draw of up to 10 million dollars. By depositing with us, you get a ticket into the draw. You get a ticket for every 20 dollars you deposit.</p>
-                    <p style={{fontSize:30, fontFamily:"Lato, sans-serif", fontWeight:300}}>So what's the catch? No catch. Banks and Sponsors pay us, and we pass our revenue onto you!</p>
+                    <div>
+                        <h1>Your new financial saving app!</h1>
+                        <p>1. Deposit money into your goal-specific accounts.</p>
+                        <p>2. Gain a ticket into our lottery with every $20 deposited at no cost.</p>  
+                        <p>3. Learn more about personal financial management.</p>
+
+                        <p>We keep your account secured at no cost while providing a chance to win money from our partners. </p>
+
+                    </div>
                 </div>
             </div>
         </div>

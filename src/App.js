@@ -10,7 +10,7 @@ function App() {
       <BrowserRouter>
        <Switch>
         <Route exact path="/" component={Landing} />
-        <Route path="/product" component={Product} />
+        <Route path="/product" component={Product} render={() => <div class='prefinery-form-embed'></div>} />
         <Route path="/home" component={Home} />
       </Switch>
       </BrowserRouter>
