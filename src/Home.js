@@ -13,6 +13,7 @@ import big from './big.svg'
 import lock from './lock.svg'
 import boring from './boring.svg'
 import {saveEmail} from './actions/save.js'
+
 const Home = () => {
     const [contact, setContact] = useState("")
     function submit(event) {

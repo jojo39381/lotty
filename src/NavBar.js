@@ -1,11 +1,11 @@
 import React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-
+import Logo from './logo.png'
 const NavBar = () => {
     return (
         <Navbar expand="lg" style={{height: 100, backgroundColor: "white", fontFamily:'Lato'}}>
-        <Navbar.Brand href="#home"><h1 style={{color:"Black"}}>Lotty</h1></Navbar.Brand>
+        <Navbar.Brand href="#home"><img src={Logo} width="135" height="75"></img></Navbar.Brand>
         
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
