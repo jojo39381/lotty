@@ -25,10 +25,10 @@ const Home = () => {
     return (
         <div>
             <NavBar></NavBar>
-            <Container fluid style={{padding:0}}>
+            <Container fluid style={{padding:0, overflow:"hidden"}}>
             
                 <Row style={{marginTop:50}}>
-                    <Col className="mb-sm-5 mb-md-0"   sm={12} md={6} style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+                    <Col className="mb-5 mb-md-0"   sm={12} md={6} style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
                         <div style={{width:"100%"}}>
                             <h1 style={{fontSize:65, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>10 <span style={{color:"#0EAD69E6"}}>Million.</span></h1>
                             <h1 style={{fontSize:65, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>Every Week.</h1>
@@ -51,10 +51,10 @@ const Home = () => {
                         <img src={iphone} width="60%" height="100%"></img>
                     </Col>
                 </Row>
-                <section style={{padding:70}}>
+                <section className="p-1 p-md-5">
                 <h2 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"center",marginTop:50}}></h2>
                 <Row style={{}}>
-                    <Col sm={12} md={4}>  
+                    <Col sm={12} lg={4}>  
 
                     
                         <img src={fee} width="100" height="100"></img>
@@ -64,13 +64,13 @@ const Home = () => {
                         
                         
                     </Col>
-                    <Col sm={12} md={4}>       
+                    <Col sm={12} lg={4}>       
                         <img src={goals} width="100" height="100"></img>
                         <h2>Set Goals</h2>
                         <p style={{width:"60%", margin:"0 auto"}}>Achieve your money goals by choosing where you want to deposit your money. #goals</p>
                         
                     </Col>
-                    <Col sm={12} md={4}>       
+                    <Col sm={12} lg={4}>       
                         <img src={big} width="100" height="100"></img>
                         <h2>Win Big</h2>
                         <p style={{width:"60%", margin:"0 auto"}}>When is the last time you won a lottery? Lotty makes it easy for you to win money by depositing money.</p>
@@ -149,18 +149,18 @@ const Home = () => {
                     </Col>
                 </Row>
                 </section> 
-                <section style={{backgroundColor:"white", padding: 50}}>
+                <section style={{backgroundColor:"white", padding: 0, marginBottom:30}}>
                 <h2 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"center",marginTop:50}}>Your Money Is Safe With Us</h2>
                 <Row>
-                    <Col className="mb-sm-5 mb-md-0"  sm={12} md={6}>
-                        <div style={{width:"80%", margin:"0 auto", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px", padding:30}}>
+                    <Col className="mb-5 mb-md-0"  sm={12} md={6}>
+                        <div style={{width:"80%", margin:"0 auto", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px", padding:30, borderRadius:50}}>
                             <img src={lock} width="100" height="100"></img>
                             <h2 style={{fontFamily: "Lato, sans-serif"}}>Bank Grade Security</h2>
                             <p style={{fontSize:20}}>We use multi-factor authetication and 256-bit encryption provided by Plaid as well as our own authentication to secure your money.</p>
                         </div>
                     </Col>
                     <Col sm={12} md={6}>
-                    <div style={{width:"80%", margin:"0 auto", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px", padding:30}}>
+                    <div style={{width:"80%", margin:"0 auto", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px", padding:30, borderRadius:50}}>
                             <img src={boring} width="100" height="100"></img>
                             <h2 style={{fontFamily: "Lato, sans-serif"}}>FDIC Insured</h2>
                             <p style={{fontSize:20}}>Our accounts are FDIC insured up to 100 million so that you can sleep soundly at night without any worries.</p>
