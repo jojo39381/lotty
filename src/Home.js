@@ -25,14 +25,14 @@ const Home = () => {
     return (
         <div>
             <NavBar></NavBar>
-            <Container fluid>
+            <Container fluid style={{padding:0}}>
             
                 <Row style={{marginTop:50}}>
-                    <Col style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+                    <Col className="mb-sm-5 mb-md-0"   sm={12} md={6} style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
                         <div style={{width:"100%"}}>
-                            <h1 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>10 Million.</h1>
-                            <h1 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>Every Week.</h1>
-                            <h1 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>No catch.</h1>
+                            <h1 style={{fontSize:65, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>10 <span style={{color:"#0EAD69E6"}}>Million.</span></h1>
+                            <h1 style={{fontSize:65, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>Every Week.</h1>
+                            <h1 style={{fontSize:65, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>No Catch.</h1>
                             {/* <Form onSubmit={submit}>
                             <Form.Group controlId="formGroupEmail">
                             <Form.Control value={contact} onChange={handleChange} type="email" placeholder="Enter email" style={{width:"80%", margin:"0 auto", textAlign:"center"}}/>
@@ -41,19 +41,20 @@ const Home = () => {
                                 Join Waitlist
                             </Button>
                             </Form> */}
-                            <Button type="button" className="vrlps-trigger" style={{width:"60%", fontSize:30}}>I want early access!</Button>
+                            <Button type="button" className="vrlps-trigger" style={{width:"60%", fontSize:30, backgroundColor:"#0EAD69E6"}}>I want early access!</Button>
+                            
                         </div>
                        
                     </Col>           
-                    
-                    <Col>
+
+                    <Col className="mb-sm-5 mb-md-0" sm={12} md={6}>
                         <img src={iphone} width="60%" height="100%"></img>
                     </Col>
                 </Row>
                 <section style={{padding:70}}>
                 <h2 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"center",marginTop:50}}></h2>
                 <Row style={{}}>
-                    <Col>  
+                    <Col sm={12} md={4}>  
 
                     
                         <img src={fee} width="100" height="100"></img>
@@ -63,13 +64,13 @@ const Home = () => {
                         
                         
                     </Col>
-                    <Col>       
+                    <Col sm={12} md={4}>       
                         <img src={goals} width="100" height="100"></img>
                         <h2>Set Goals</h2>
                         <p style={{width:"60%", margin:"0 auto"}}>Achieve your money goals by choosing where you want to deposit your money. #goals</p>
                         
                     </Col>
-                    <Col>       
+                    <Col sm={12} md={4}>       
                         <img src={big} width="100" height="100"></img>
                         <h2>Win Big</h2>
                         <p style={{width:"60%", margin:"0 auto"}}>When is the last time you won a lottery? Lotty makes it easy for you to win money by depositing money.</p>
@@ -79,8 +80,8 @@ const Home = () => {
 
                 </Row>
                 </section>
-                <section style={{backgroundColor:"#F9F9FD", padding:70}}>
-                <h2 style={{fontSize:50, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"center",}}>Why Us</h2>
+                <section style={{backgroundColor:"#0EAD69E6", padding:70, color:"white"}}>
+                <h2 style={{fontSize:50, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"center", padding:0}}>Why Us</h2>
                 <Row>
                     <Col>       
                     
@@ -138,7 +139,7 @@ const Home = () => {
                     
 
                 </Row>
-                <section style={{backgroundColor:"#F9F9FD", padding: 50}}>
+                <section style={{backgroundColor:"#0EAD69E6", padding:70, color:"white"}}>
                 <h2 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"center",marginTop:50}}>Is there a catch?</h2>
                 <Row>
                     <Col>
@@ -151,14 +152,14 @@ const Home = () => {
                 <section style={{backgroundColor:"white", padding: 50}}>
                 <h2 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"center",marginTop:50}}>Your Money Is Safe With Us</h2>
                 <Row>
-                    <Col>
+                    <Col className="mb-sm-5 mb-md-0"  sm={12} md={6}>
                         <div style={{width:"80%", margin:"0 auto", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px", padding:30}}>
                             <img src={lock} width="100" height="100"></img>
                             <h2 style={{fontFamily: "Lato, sans-serif"}}>Bank Grade Security</h2>
                             <p style={{fontSize:20}}>We use multi-factor authetication and 256-bit encryption provided by Plaid as well as our own authentication to secure your money.</p>
                         </div>
                     </Col>
-                    <Col>
+                    <Col sm={12} md={6}>
                     <div style={{width:"80%", margin:"0 auto", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px", padding:30}}>
                             <img src={boring} width="100" height="100"></img>
                             <h2 style={{fontFamily: "Lato, sans-serif"}}>FDIC Insured</h2>
@@ -170,7 +171,7 @@ const Home = () => {
             </Container>
             <footer style={{padding:50}}>
                 <Row>
-                    <Col style={{textAlign:"left"}}>
+                    <Col  style={{textAlign:"left"}}>
                         <h1 style={{fontSize:50}}>Lotty</h1>
                     </Col>
                     <Col>
