@@ -15,12 +15,13 @@ const Landing = () => {
     }
     return (
         <div >
+        
             <div style={{display:"flex", alignItems:"center", justifyContent:"center", height:"100vh"}}>
                 <div style={{width:"70%"}}>
                 <img src={Logo} width="243" height="135" ></img>
                 <h1 style={{fontSize:40, fontFamily:"Lato, sans-serif"}}>We redesigned savings with your goals in mind.</h1>
                 <p style={{fontSize:20, fontFamily:"Lato, sans-serif", fontWeight:300}}>No Fees. Set Goals. Win Money.</p>
-                <Link to="/home"><p style={{fontSize:15}}>Learn More</p></Link>
+                <Link to="/product"><p style={{fontSize:15}}>Learn More</p></Link>
                 {/* <Form onSubmit={submit} >
                             <Form.Group controlId="formGroupEmail">
                             <Form.Control value={contact} onChange={handleChange} type="email" placeholder="Enter email" style={{width:"100%", margin:"0 auto", textAlign:"center"}}/>
