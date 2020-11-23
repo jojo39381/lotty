@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
+import {saveEmail} from './actions/save.js'
 import Carousel from 'react-bootstrap/Carousel'
 import iphone from './iphone.png'
 import fee from './fee.svg'
@@ -12,7 +13,7 @@ import goals from './goals.svg'
 import big from './big.svg'
 import lock from './lock.svg'
 import boring from './boring.svg'
-import {saveEmail} from './actions/save.js'
+
 
 const Home = () => {
     const [contact, setContact] = useState("")
