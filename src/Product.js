@@ -7,9 +7,9 @@ const Product = () => {
              <div style={{display:"flex", alignItems:"center", justifyContent:"center", height:"100vh"}}>
                 <div style={{width:"70%"}}>
                     <img src={Logo} width="243" height="135"></img>
-                    <div>
+                    <div style={{backgroundColor:"#0EAD69E6"}}>
                         <h1>Your new financial saving app!</h1>
-                        <p>1. Deposit money into your goal-specific accounts.</p>
+                        <p >1. Deposit money into your goal-specific accounts.</p>
                         <p>2. Gain a ticket into our lottery with every $20 deposited at no cost.</p>  
                         <p>3. Learn more about personal financial management.</p>
 

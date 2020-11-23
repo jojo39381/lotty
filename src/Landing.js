@@ -15,15 +15,12 @@ const Landing = () => {
     function handleChange(event) {
         setContact(event.target.value)
     }
-    window.addEventListener( "pageshow", function ( event ) {
-        var historyTraversal = event.persisted || 
-                               ( typeof window.performance != "undefined" && 
-                                    window.performance.navigation.type === 2 );
-        if ( historyTraversal ) {
-          // Handle page restore.
-          window.location.reload();
-        }
-      });
+
+    
+    
+    if(String(window.performance.getEntriesByType("navigation")[0].type) === "back_forward"){
+        window.location.reload(true);
+     }
 
 
     
