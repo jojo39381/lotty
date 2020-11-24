@@ -3,13 +3,9 @@ import Logo from './logo.png'
 import history from './history'
 
 import ReactGA from 'react-ga';
-
-ReactGA.initialize('UA-183883881-1');
-history.listen((location, action) => {
-    ReactGA.pageview(location.pathname + location.search);
-    console.log(location.pathname)
-});
 const Product = () => {
+    ReactGA.initialize('UA-183883881-1');
+    ReactGA.pageview(window.location.pathname + window.location.search); 
     return (
         <div>
              <div style={{display:"flex", alignItems:"center", justifyContent:"center", height:"100vh"}}>
