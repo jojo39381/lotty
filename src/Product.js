@@ -5,7 +5,12 @@ import history from './history'
 import ReactGA from 'react-ga';
 const Product = () => {
     ReactGA.initialize('UA-183883881-1');
-    ReactGA.pageview(window.location.pathname + window.location.search); 
+    useEffect( () => {
+
+        // This line will trigger on a route change
+        ReactGA.pageview(window.location.pathname + window.location.search); 
+
+    });
     return (
         <div>
              <div style={{display:"flex", alignItems:"center", justifyContent:"center", height:"100vh"}}>
