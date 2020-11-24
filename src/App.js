@@ -4,7 +4,9 @@ import Home from './Home.js'
 import Landing from './Landing.js'
 import Product  from './Product.js'
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import ReactGA from 'react-ga';
 
+ReactGA.initialize('UA-183883881-1');
 function App() {
   return (
     <div className="App">

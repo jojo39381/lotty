@@ -9,7 +9,7 @@ import ReactPixel from 'react-facebook-pixel';
 import ReactGA from 'react-ga';
 
 const Landing = () => {
-    ReactGA.initialize('UA-183883881-1');
+
 ReactGA.pageview(window.location.pathname + window.location.search);
     const [contact, setContact] = useState("")
     function submit(event) {
