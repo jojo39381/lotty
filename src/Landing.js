@@ -5,15 +5,12 @@ import Button from 'react-bootstrap/Button'
 import {saveEmail} from './actions/save.js'
 import {Link} from 'react-router-dom'
 import ReactPixel from 'react-facebook-pixel';
-import $ from 'jquery';
 
 import ReactGA from 'react-ga';
 
 const Landing = () => {
-    
     ReactGA.initialize('UA-183883881-1');
-   
-  
+ReactGA.pageview(window.location.pathname + window.location.search);
     const [contact, setContact] = useState("")
     function submit(event) {
         saveEmail(contact)
