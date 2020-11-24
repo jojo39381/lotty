@@ -38,7 +38,7 @@ const Landing = () => {
                 <div style={{width:"70%"}}>
                 <img src={Logo} width="243" height="135" ></img>
                 <h1 style={{fontSize:40, fontFamily:"Lato, sans-serif"}}>We redesigned savings with your goals in mind.</h1>
-                <p style={{fontSize:20, fontFamily:"Lato, sans-serif", fontWeight:300}}>No Fees. Set Goals. Win Money.</p>
+                <p style={{fontSize:20, fontFamily:"Lato, sans-serif", fontWeight:300}}>Start Winning Money When You Deposit.</p>
                 <Link to="/product"><p style={{fontSize:15}}>Learn More</p></Link>
                 {/* <Form onSubmit={submit} >
                             <Form.Group controlId="formGroupEmail">
