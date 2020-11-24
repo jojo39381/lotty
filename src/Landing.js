@@ -6,18 +6,14 @@ import {saveEmail} from './actions/save.js'
 import {Link} from 'react-router-dom'
 import ReactPixel from 'react-facebook-pixel';
 import $ from 'jquery';
-import history from './history'
+
 import ReactGA from 'react-ga';
 
 const Landing = () => {
+    
     ReactGA.initialize('UA-183883881-1');
    
-    useEffect( () => {
-
-        // This line will trigger on a route change
-        ReactGA.pageview(window.location.pathname + window.location.search); 
-
-    });
+  
     const [contact, setContact] = useState("")
     function submit(event) {
         saveEmail(contact)
