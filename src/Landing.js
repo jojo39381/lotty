@@ -7,9 +7,16 @@ import {Link} from 'react-router-dom'
 import ReactPixel from 'react-facebook-pixel';
 import $ from 'jquery';
 import history from './history'
+
 import ReactGA from 'react-ga';
 ReactGA.initialize('UA-183883881-1');
-ReactGA.pageview(window.location.pathname + window.location.search);    
+history.listen((location, action) => {
+    ReactGA.pageview(location.pathname + location.search);
+    console.log(location.pathname)
+});
+
+
+ 
 
 const Landing = () => {
     const [contact, setContact] = useState("")
