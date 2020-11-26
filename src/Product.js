@@ -2,7 +2,6 @@ import React from 'react'
 import Logo from './logo.png'
 
 
-import ReactGA from 'react-ga';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -11,7 +10,7 @@ import goals from './goals.svg'
 import big from './big.svg'
 const Product = () => {
     
-    ReactGA.pageview(window.location.pathname + window.location.search); 
+ 
     return (
         <div>
              <div style={{display:"flex", alignItems:"center", justifyContent:"center", height:"100vh"}}>

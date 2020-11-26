@@ -6,11 +6,9 @@ import {saveEmail} from './actions/save.js'
 import {Link} from 'react-router-dom'
 import ReactPixel from 'react-facebook-pixel';
 
-import ReactGA from 'react-ga';
 
 const Landing = () => {
 
-ReactGA.pageview(window.location.pathname + window.location.search);
     const [contact, setContact] = useState("")
     function submit(event) {
         saveEmail(contact)
