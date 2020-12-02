@@ -12,8 +12,8 @@ function App() {
     <div className="App">
       <BrowserRouter >
        <Switch>
-        <Route exact path="/" component={Product} />
-        <Route path="/product" component={Home}/>
+        <Route exact path="/" component={Landing} />
+        <Route path="/product" component={Product}/>
        
       </Switch>
       </BrowserRouter>
