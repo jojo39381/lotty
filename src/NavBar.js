@@ -5,7 +5,7 @@ import Logo from './logo.png'
 import Brand from './brand.png'
 const NavBar = () => {
     return (
-        <Navbar expand="lg" style={{height: 100, backgroundColor: "white", fontFamily:'Lato'}}>
+        <Navbar expand="lg" style={{height: 100, backgroundColor: "clear", fontFamily:'Lato'}}>
         <Navbar.Brand href="#home">
         {/* <img src={Brand} width="180" height="75"></img> */}
         <img src={Logo} width="135" height="75"></img>

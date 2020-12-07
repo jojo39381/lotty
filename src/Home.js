@@ -13,7 +13,7 @@ import goals from './goals.svg'
 import big from './big.svg'
 import lock from './lock.svg'
 import boring from './boring.svg'
-
+import Background from './background.png'
 
 const Home = () => {
     const [contact, setContact] = useState("")
@@ -26,9 +26,10 @@ const Home = () => {
     }
     return (
         <div>
-            <NavBar></NavBar>
-            <Container fluid style={{padding:0, overflow:"hidden"}}>
             
+            <Container fluid style={{padding:0, overflow:"hidden"}}>
+                <div style={{backgroundImage:"url(" + Background + ")"}}>
+                <NavBar></NavBar>
                 <Row style={{marginTop:50}}>
                     <Col className="mb-5 mb-md-0"   sm={12} md={6} style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
                         <div style={{width:"100%"}}>
@@ -43,7 +44,7 @@ const Home = () => {
                                 Join Waitlist
                             </Button>
                             </Form> */}
-                            <Button type="button" className="vrlps-trigger" style={{width:"60%", fontSize:30, backgroundColor:"#    "}}>I want early access!</Button>
+                            <Button type="button" className="vrlps-trigger" style={{width:"60%", fontSize:30, backgroundColor:"#3ABD85"}}>I want early access!</Button>
                             
                         </div>
                        
@@ -53,6 +54,7 @@ const Home = () => {
                         <img src={iphone} width="60%" height="100%"></img>
                     </Col>
                 </Row>
+                </div>
                 <section className="p-1 p-md-5">
                 <h2 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"center",marginTop:50}}></h2>
                 <Row style={{}}>

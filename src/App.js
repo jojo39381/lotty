@@ -13,12 +13,13 @@ function App() {
       <BrowserRouter >
        <Switch>
         <Route exact path="/" component={Landing} />
-        <Route path="/product" component={Product}/>
+        <Route path="/product" component={Home}/>
        
       </Switch>
       </BrowserRouter>
     </div>
   );
 }
+
 
 export default App;
