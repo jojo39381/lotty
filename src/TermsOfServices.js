@@ -5,7 +5,7 @@ const TermsOfServices = () => {
     return (
         <div>
 
-            <Container fluid style={{padding:0, overflow:"hidden"}}>
+            <Container fluid style={{padding:0, overflow:"hidden", width:"80%", margin:"0 auto"}}>
                
                <NavBar hideOptions={true}></NavBar>
                 <h1>Terms Of Services</h1>
