@@ -2,7 +2,7 @@
 import './App.css';
 
 import Landing from './Landing.js'
-import Product  from './Product.js'
+
 import Home from './Home.js'
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 

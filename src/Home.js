@@ -7,14 +7,25 @@ import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import {saveEmail} from './actions/save.js'
 import Carousel from 'react-bootstrap/Carousel'
-import iphone from './iphone.png'
-import fee from './fee.svg'
-import goals from './goals.svg'
-import big from './big.svg'
+import iphone from './rewards.png'
+import otheriphone from './otheriphone.png'
 import lock from './lock.svg'
 import boring from './boring.svg'
-import Background from './background.png'
 
+import victoria from './assets/victoria.png'
+import ttoust from './assets/ttoust.png'
+import tptea from './assets/tptea.png'
+import sliverpizza from './assets/sliverpizza.png'
+import philz from './assets/philz.jpeg'
+import lululemon from './assets/lululemon.png'
+import imm from './assets/imm.png'
+import hm from './assets/h&m.png'
+import gongcha from './assets/gongcha.png'
+import forever from './assets/forever.png'
+
+const logoStyle = {
+    margin:10
+}
 const Home = () => {
     const [contact, setContact] = useState("")
     function submit(event) {
@@ -28,162 +39,139 @@ const Home = () => {
         <div>
             
             <Container fluid style={{padding:0, overflow:"hidden"}}>
-                <div style={{backgroundImage:"url(" + Background + ")"}}>
+               
                 <NavBar></NavBar>
+                <div style={{width:"80%", margin:"0 auto"}}>
                 <Row style={{marginTop:50}}>
-                    <Col className="mb-5 mb-md-0"   sm={12} md={6} style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+                    <Col className="mb-5 mb-md-0"   sm={12} md={7} lg={6} style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
                         <div style={{width:"100%"}}>
-                            <h1 style={{fontSize:65, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>10 <span style={{color:"#0EAD69E6"}}>Million.</span></h1>
-                            <h1 style={{fontSize:65, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>Every Week.</h1>
-                            <h1 style={{fontSize:65, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>No Catch.</h1>
-                            {/* <Form onSubmit={submit}>
-                            <Form.Group controlId="formGroupEmail">
-                            <Form.Control value={contact} onChange={handleChange} type="email" placeholder="Enter email" style={{width:"80%", margin:"0 auto", textAlign:"center"}}/>
-                            </Form.Group>
-                            <Button variant="primary" type="submit" style={{width:"80%"}}>
-                                Join Waitlist
-                            </Button>
-                            </Form> */}
-                            <Button type="button" className="vrlps-trigger" style={{width:"60%", fontSize:30, backgroundColor:"#3ABD85"}}>I want early access!</Button>
+                            <h1 style={{fontSize:"5vw", marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"left"}}>The Card That Rewards You Based on Your Interests</h1>
+                            <p style={{fontSize:"2.5vh", marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"300", textAlign:"left"}}>The Celestial Card lets you earn rewards every time you swipe, based on your interests. We partner with local and large brands to bring you discounts and rewards. No Fees. No Suprise Charges.</p>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Email Address" style={{height:50, display:"inline"}}></input>
+                                <span class="input-group-btn">
+                                <Button type="button" className="vrlps-trigger" style={{fontSize:20, height:50, backgroundColor:"black", display:"inline", borderStyle:"None"}}>Join Waitlist</Button>
+                                </span>
+                            </div>
+                            
+                            
                             
                         </div>
                        
                     </Col>           
 
-                    <Col className="mb-sm-5 mb-md-0" sm={12} md={6}>
-                        <img src={iphone} width="60%" height="100%"></img>
+                    <Col className="mb-sm-5 mb-md-0" sm={12} md={5} lg={6}>
+                        <div style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100%"}}>
+                        <img src={iphone} width="65%"></img>
+                        </div>
                     </Col>
                 </Row>
-                </div>
-                <section className="p-1 p-md-5">
-                <h2 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"center",marginTop:50}}></h2>
-                <Row style={{}}>
-                    <Col sm={12} lg={4}>  
-
-                    
-                        <img src={fee} width="100" height="100"></img>
-                        <h2>No Fees</h2>
-                        <p style={{width:"60%", margin:"0 auto"}}>That's right. Lotty is completely free, so you can win without losing money! Win Win!</p>
-
-                        
-                        
-                    </Col>
-                    <Col sm={12} lg={4}>       
-                        <img src={goals} width="100" height="100"></img>
-                        <h2>Set Goals</h2>
-                        <p style={{width:"60%", margin:"0 auto"}}>Achieve your money goals by choosing where you want to deposit your money. #goals</p>
-                        
-                    </Col>
-                    <Col sm={12} lg={4}>       
-                        <img src={big} width="100" height="100"></img>
-                        <h2>Win Big</h2>
-                        <p style={{width:"60%", margin:"0 auto"}}>When is the last time you won a lottery? Lotty makes it easy for you to win money by depositing money.</p>
-                        
-                    </Col>
                
-
-                </Row>
-                </section>
-                <section style={{backgroundColor:"#0EAD69E6", padding:70, color:"white"}}>
-                <h2 style={{fontSize:50, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"center", padding:0}}>Why Us</h2>
+             
+                
+                <section id="rewards" style={{marginTop:100}}>
                 <Row>
-                    <Col>       
-                    
-                        <h3>At Lotty, we believe that banking should be fun.</h3>
-                        <h3>With loans, bills, and debts, we understand how hard it is to save. </h3>
-                        <h3>The average millennial has less than $5000 in their saving accounts.</h3>
-                        <h3>We redesigned saving to make it easy, fun, and profitable.</h3>
+                    <Col sm={12} md={2} >       
+                        <div style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100%"}}>
+                        <h2 style={{fontSize:40, textAlign:"left"}}>Cashbacks & Rewards</h2>
+                        
+                        </div>
+                    </Col>
+                    <Col sm={12} md={10}>       
+                        <img style={logoStyle} src={victoria} width="150px" height="100px"></img>
+                        <img style={logoStyle} src={ttoust} width="150px" height="100px"></img>
+                        <img style={logoStyle} src={tptea} width="150px" height="100px"></img>
+                        <img style={logoStyle} src={sliverpizza} width="150px" height="100px"></img>
+                        <img style={logoStyle} src={philz} width="150px" height="100px"></img>
+                        <img style={logoStyle} src={lululemon} width="150px" height="100px"></img>
+                        <img style={logoStyle} src={imm} width="150px" height="100px"></img>
+                        <img style={logoStyle} src={hm} width="150px" height="100px"></img>
+                        <img style={logoStyle} src={gongcha} width="150px" height="100px"></img>
+                        <img style={logoStyle} src={forever} width="150px" height="100px"></img>
                     </Col>
                     
 
                 </Row>
                 </section>
-                <h2 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"center",marginTop:50}}>How it works</h2>
+              
+                <section id="how_it_works" style={{marginTop:100}}>
+                
                 <Row style={{}}>
-                    <Col>       
-                    <Carousel style={{width:"100%", height:"100%", padding:30}}>
-                        <Carousel.Item interval={1000} style={{width:"100%", height:"50%"}}>
-                            <img
-                            width="30%"
-                            src={iphone}
-                            alt="First slide"
-                            style={{display:"inline-block", margin:30}}
-                            />
-                            <h2 style={{display:"inline-block"}}>1. Set Goals</h2>
-                        </Carousel.Item>
-                        <Carousel.Item interval={1000} style={{width:"100%", height:"50%"}}>
-                            <img
-                            width="30%"
-                            src={iphone}
-                            alt="First slide"
-                            style={{display:"inline-block", margin:30}}
-                            />
-                            <h2 style={{display:"inline-block"}}>2. Make a Deposit</h2>
-                        </Carousel.Item>
-                        <Carousel.Item interval={1000} style={{width:"100%", height:"50%"}}>
-                            <img
-                            width="30%"
-                            src={iphone}
-                            alt="First slide"
-                            style={{display:"inline-block", margin:30}}
-                            />
-                            <h2 style={{display:"inline-block"}}>3. Get Tickets</h2>
-                        </Carousel.Item>
-                        <Carousel.Item interval={1000} style={{width:"100%", height:"50%"}}>
-                            <img
-                            width="30%"
-                            src={iphone}
-                            alt="First slide"
-                            style={{display:"inline-block", margin:30}}
-                            />
-                            <h2 style={{display:"inline-block"}}>4. Win Big</h2>
-                        </Carousel.Item>
-                    </Carousel>
+                    <Col md={6}>       
+                    <h2 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"left",marginTop:50}}>How it works</h2>
+                        <ul>
+                            <li style={{marginBottom:50, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>
+                                Each swipe gets you a chance to win a reward!
+                            </li>
+                            <li style={{marginBottom:50, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>
+                                Win discounts/cashbacks, in-store credits, and other exclusive rewards
+                            </li>
+                            <li style={{marginBottom:50, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>
+                                Guranteed rewards every time
+                            </li>
+                            <li style={{marginBottom:50, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>
+                                $0 Fees, $0 Surprise Charges
+                            </li>
+                            
+                        </ul>
+                    </Col>
+                    <Col className="mb-sm-5 mb-md-0"  md={6}>
+                        <img src={otheriphone} width="60%" height="100%"></img>
                     </Col>
                     
 
                 </Row>
-                <section style={{backgroundColor:"#0EAD69E6", padding:70, color:"white"}}>
-                <h2 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"center",marginTop:50}}>Is there a catch?</h2>
-                <Row>
-                    <Col>
-                        <h2>Nope! No catch.</h2>
-                        <h2>Our weekly drawings are funded by banks and sponsors.</h2>
-                        <h2>They give us money, and we pass it on to you!</h2>
+                </section>
+                <section id="f&q">
+                    <Row>
+                    <Col md={6}>       
+                        <h2 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"left",marginTop:50}}>Frequently Asked Questions</h2>
+                        <ul style={{listStyleType:"None"}}>
+                            <li style={{marginBottom:30, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>
+                                Q: How is this possible?
+                            </li>
+                            <li style={{marginBottom:30, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"300"}}>
+                                A: Local and large companies pays us to get our customers to shop at their store, and we receive a cut of that revenue.
+                            </li>
+                            <li style={{marginBottom:30, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>
+                                Q: Is there really no fees?
+                            </li>
+                            <li style={{marginBottom:30, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"300"}}>
+                                A: Yes. No fees. In addition to the fee we charge merchants, we also get a share of the interchange fees to cover our costs.
+                            </li>
+                            <li style={{marginBottom:30, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>
+                                Q: Why does this exist?
+                            </li>
+                            <li style={{marginBottom:30, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"300"}}>
+                                A: We think that debit cards should be fun and rewarding to the customer, and that customers should get rewarded based on what they want. Tradition debit cards offer little to no benefits, and we are here to change that!
+                            </li>
+                            
+                        </ul>
                     </Col>
-                </Row>
-                </section> 
-                <section style={{backgroundColor:"white", padding: 0, marginBottom:30}}>
-                <h2 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"center",marginTop:50}}>Your Money Is Safe With Us</h2>
-                <Row>
-                    <Col className="mb-5 mb-md-0"  sm={12} md={6}>
-                        <div style={{width:"80%", margin:"0 auto", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px", padding:30, borderRadius:50}}>
-                            <img src={lock} width="100" height="100"></img>
-                            <h2 style={{fontFamily: "Lato, sans-serif"}}>Bank Grade Security</h2>
-                            <p style={{fontSize:20}}>We use multi-factor authetication and 256-bit encryption provided by Plaid as well as our own authentication to secure your money.</p>
-                        </div>
-                    </Col>
-                    <Col sm={12} md={6}>
-                    <div style={{width:"80%", margin:"0 auto", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px", padding:30, borderRadius:50}}>
-                            <img src={boring} width="100" height="100"></img>
-                            <h2 style={{fontFamily: "Lato, sans-serif"}}>FDIC Insured</h2>
-                            <p style={{fontSize:20}}>Our accounts are FDIC insured up to 100 million so that you can sleep soundly at night without any worries.</p>
-                        </div>
-                    </Col>
-                </Row>
-                </section> 
+                    
+                    </Row>
+                </section>
+                </div>
+            
             </Container>
             <footer style={{padding:50}}>
                 <Row>
-                    <Col  style={{textAlign:"left"}}>
-                        <h1 style={{fontSize:50}}>Lotty</h1>
+                    <Col  style={{textAlign:"left"}} sm={12} md={6}>
+                        <h1 style={{fontSize:50,  fontFamily: "Lato, sans-serif", fontWeight:"300"}}>Celestial</h1>
+                        <p>
+                        The Celestial Mastercard® Debit Card is provided by The Bancorp Bank, Member FDIC, pursuant to license by Mastercard International Incorporated. Mastercard is a registered trademark, and the circles design is a trademark of Mastercard International Incorporated. Program Management services provided by Galileo Financial Technologies, LLC. Spend anywhere Mastercard is accepted.
+                        </p>
+                        <span style={{marginRight:20}}>Terms of Services</span>
+                        <span style={{marginRight:20}}>Privacy Policy</span>
+                       
                     </Col>
-                    <Col>
+                    <Col sm={12} md={6}>
+                        <h1 style={{fontSize:50,  fontFamily: "Lato, sans-serif", fontWeight:"300"}}>Join the waitlist</h1>
                     <Form>
                             <Form.Group controlId="formGroupEmail">
                             <Form.Control type="email" placeholder="Enter email" style={{width:"80%", margin:"0 auto", textAlign:"center"}}/>
                             </Form.Group>
-                            <Button variant="primary" type="submit" style={{width:"80%"}}>
+                            <Button variant="primary" type="submit" style={{width:"80%", fontSize:30, backgroundColor:"black"}}>
                                 Join Waitlist
                             </Button>
                             </Form>
