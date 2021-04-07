@@ -11,7 +11,7 @@ import iphone from './rewards.png'
 import otheriphone from './otheriphone.png'
 import lock from './lock.svg'
 import boring from './boring.svg'
-
+import { Link } from 'react-router-dom';
 import victoria from './assets/victoria.png'
 import ttoust from './assets/ttoust.png'
 import tptea from './assets/tptea.png'
@@ -40,7 +40,7 @@ const Home = () => {
             
             <Container fluid style={{padding:0, overflow:"hidden"}}>
                
-                <NavBar></NavBar>
+                <NavBar hideOptions={false}></NavBar>
                 <div style={{width:"80%", margin:"0 auto"}}>
                 <Row style={{marginTop:50}}>
                     <Col className="mb-5 mb-md-0"   sm={12} md={7} lg={6} style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
@@ -70,6 +70,7 @@ const Home = () => {
              
                 
                 <section id="rewards" style={{marginTop:100}}>
+  
                 <Row>
                     <Col sm={12} md={2} >       
                         <div style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100%"}}>
@@ -93,9 +94,9 @@ const Home = () => {
 
                 </Row>
                 </section>
-              
-                <section id="how_it_works" style={{marginTop:100}}>
                 
+                <section id="how_it_works" style={{marginTop:100}}>
+                <hr></hr>
                 <Row style={{}}>
                     <Col md={6}>       
                     <h2 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"left",marginTop:50}}>How it works</h2>
@@ -107,7 +108,7 @@ const Home = () => {
                                 Win discounts/cashbacks, in-store credits, and other exclusive rewards
                             </li>
                             <li style={{marginBottom:50, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>
-                                Guranteed rewards every time
+                                Guaranteed rewards every time
                             </li>
                             <li style={{marginBottom:50, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>
                                 $0 Fees, $0 Surprise Charges
@@ -116,13 +117,17 @@ const Home = () => {
                         </ul>
                     </Col>
                     <Col className="mb-sm-5 mb-md-0"  md={6}>
-                        <img src={otheriphone} width="60%" height="100%"></img>
+                    <div style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100%"}}>
+                        <img src={otheriphone} width="65%"></img>
+                        </div>
                     </Col>
                     
 
                 </Row>
                 </section>
-                <section id="f&q">
+                
+                <section id="f&q" style={{marginTop:100}}>
+                    <hr></hr>
                     <Row>
                     <Col md={6}>       
                         <h2 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"left",marginTop:50}}>Frequently Asked Questions</h2>
@@ -161,20 +166,22 @@ const Home = () => {
                         <p>
                         The Celestial Mastercard® Debit Card is provided by The Bancorp Bank, Member FDIC, pursuant to license by Mastercard International Incorporated. Mastercard is a registered trademark, and the circles design is a trademark of Mastercard International Incorporated. Program Management services provided by Galileo Financial Technologies, LLC. Spend anywhere Mastercard is accepted.
                         </p>
-                        <span style={{marginRight:20}}>Terms of Services</span>
-                        <span style={{marginRight:20}}>Privacy Policy</span>
+                        <Link to="/terms-of-services"><span style={{marginRight:20, color:"black"}}>Terms of Services</span></Link>
+                        <Link to="/privacy-policy"><span style={{marginRight:20, color:"black"}}>Privacy Policy</span></Link>
                        
                     </Col>
                     <Col sm={12} md={6}>
+                    <div style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100%"}}>
+                    <div>
                         <h1 style={{fontSize:50,  fontFamily: "Lato, sans-serif", fontWeight:"300"}}>Join the waitlist</h1>
-                    <Form>
-                            <Form.Group controlId="formGroupEmail">
-                            <Form.Control type="email" placeholder="Enter email" style={{width:"80%", margin:"0 auto", textAlign:"center"}}/>
-                            </Form.Group>
-                            <Button variant="primary" type="submit" style={{width:"80%", fontSize:30, backgroundColor:"black"}}>
-                                Join Waitlist
-                            </Button>
-                            </Form>
+                            <div class="input-group" style={{marginTop:30}}>
+                                    <input type="text" class="form-control" placeholder="Email Address" style={{height:50, display:"inline"}}></input>
+                                    <span class="input-group-btn">
+                                    <Button type="button" className="vrlps-trigger" style={{fontSize:20, height:50, backgroundColor:"black", display:"inline", borderStyle:"None"}}>Join Waitlist</Button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
                     </Col>
                 </Row>
             </footer>
