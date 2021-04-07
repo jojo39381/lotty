@@ -20,20 +20,49 @@ import hm from './assets/h&m.png'
 import gongcha from './assets/gongcha.png'
 import forever from './assets/forever.png'
 import faqphone from './faqphone.png'
+import Modal from 'react-modal';
+ 
+const customStyles = {
+  content : {
+    top                   : '50%',
+    left                  : '50%',
+    right                 : 'auto',
+    bottom                : 'auto',
+    marginRight           : '-50%',
+    transform             : 'translate(-50%, -50%)'
+  }
+};
 const logoStyle = {
     margin:10
 }
 const Home = () => {
     const [contact, setContact] = useState("")
+    const [modalIsOpen,setIsOpen] = useState(false);
     function submit(event) {
-       
-        saveEmail(contact)
+        if (contact !== "") {
+            saveEmail(contact)
+            openModal()
+            
+        }
         event.preventDefault()
+        
     }
     function handleChange(event) {
         setContact(event.target.value)
         
     }
+    function openModal() {
+        setIsOpen(true);
+      }
+     
+      function afterOpenModal() {
+        // references are now sync'd and can be accessed.
+        // subtitle.style.color = '#f00';
+      }
+     
+      function closeModal(){
+        setIsOpen(false);
+      }
     return (
         <div>
             
@@ -55,6 +84,18 @@ const Home = () => {
                             
                             </div>
                             </form>
+                            <Modal
+          isOpen={modalIsOpen}
+          onAfterOpen={afterOpenModal}
+          onRequestClose={closeModal}
+          style={customStyles}
+          contentLabel="Example Modal"
+        >
+ 
+          <h2>Thank you!</h2>
+         <p>You will be one of the first to know when we launch!</p>
+         <button onClick={closeModal} style={{border:"None", backgroundColor:"transparent", fontSize:25, position:"absolute", top:0, right:0, height:30, width:50}}>X</button>
+        </Modal>
                             
                             
                             
