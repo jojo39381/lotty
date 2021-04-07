@@ -150,7 +150,7 @@ const Home = () => {
                                 Each swipe or deposit (at least $50) gets you a chance to win a reward!
                             </li>
                             <li style={{marginBottom:50, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>
-                                Win discounts/cashbacks, in-store credits, and other exclusive rewards
+                                Win discounts/cashbacks, in-store credits, and other rewards
                                 <p style={{marginTop:20, fontWeight:700, textDecoration:"underline"}}>Rewards Include:</p>
                                 <ul>
                                     <li style={{marginBottom:30,fontWeight:700}}>
