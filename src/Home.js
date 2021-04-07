@@ -146,10 +146,10 @@ const Home = () => {
                     <Col md={6}>       
                     <h2 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"left",marginTop:50}}>How it works</h2>
                         <ul>
-                            <li style={{marginBottom:50, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>
+                            <li style={{marginBottom:40, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>
                                 Each swipe or deposit (at least $50) gets you a chance to win a reward!
                             </li>
-                            <li style={{marginBottom:50, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>
+                            <li style={{marginBottom:40, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>
                                 Win discounts/cashbacks, in-store credits, and other rewards
                                 <p style={{marginTop:20, fontWeight:700, textDecoration:"underline"}}>Rewards Include:</p>
                                 <ul>
@@ -164,10 +164,10 @@ const Home = () => {
                                     </li>
                                 </ul>
                             </li>
-                            <li style={{marginBottom:50, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>
+                            <li style={{marginBottom:40, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>
                                 Guaranteed rewards every time
                             </li>
-                            <li style={{marginBottom:50, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>
+                            <li style={{marginBottom:40, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>
                                 $0 Fees, $0 Surprise Charges
                             </li>
                             
