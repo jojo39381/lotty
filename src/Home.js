@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button'
 import {saveEmail} from './actions/save.js'
 // import Carousel from 'react-bootstrap/Carousel'
 import iphone from './rewards.png'
-import otheriphone from './otheriphone.png'
+import otheriphone from './assets/otheriphone.png'
 import { Link } from 'react-router-dom';
 import victoria from './assets/victoria.png'
 import ttoust from './assets/ttoust.png'
@@ -102,8 +102,8 @@ const Home = () => {
                     <Col className="mb-5 mb-md-0"   sm={12} md={7} lg={7} style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
                     <Fade left>
                         <div style={{width:"100%"}}>
-                            <h1 style={{fontSize:"4.5vw", marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"left"}}>The Card That Rewards You Based On Your Interests</h1>
-                            <p style={{fontSize:"2.5vh", marginBottom:20, fontFamily: "Lato, sans-serif", fontWeight:"300", textAlign:"left"}}>The Celestial Card lets you earn rewards every time you swipe, based on your interests. We partner with local and large brands to bring you discounts and rewards.</p>
+                            <h1 style={{fontSize:"4.5vw", marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"left"}}>The Debit Card That Rewards You Based On Your Interests</h1>
+                            <p style={{fontSize:"2.5vh", marginBottom:20, fontFamily: "Lato, sans-serif", fontWeight:"300", textAlign:"left"}}>The Celestial Card lets you earn rewards every time you swipe, based on your interests. We partner with both local and large brands to bring you discounts and rewards.</p>
                             <p style={{fontSize:"2.5vh", marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"300", textAlign:"left"}}>No Fees. No Surprise Charges.</p>
                             <form onSubmit={submit}>
                             <div class="input-group" style={{border:"1px solid black", borderRadius:5}}>
@@ -193,7 +193,7 @@ const Home = () => {
                             </li>
                             <li style={{marginBottom:40, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>
                                 Win discounts/cashbacks, in-store credits, and other rewards
-                                <p style={{marginTop:20, fontWeight:700, textDecoration:"underline"}}>Rewards Include:</p>
+                                <p style={{marginTop:20, fontWeight:700}}>Rewards Include:</p>
                                 <Fade delay={1000}>
                                 <ul>
                                     <li style={{marginBottom:30,fontWeight:700}}>
@@ -315,14 +315,14 @@ const Home = () => {
             </Container>
             <footer style={{padding:50, borderTop:"1px solid", marginTop:100}}>
                 <Row>
-                    <Col className="mb-sm-5 mb-md-0" style={{textAlign:"left"}} sm={12} md={6}>
+                    <Col style={{marginBottom:30}} className="mb-sm-5 mb-md-0" style={{textAlign:"left"}} sm={12} md={6}>
                         <h1 style={{fontSize:50,  fontFamily: "Lato, sans-serif", fontWeight:"300"}}>Celestial</h1>
                         <p>All rewards and cashback at merchants are funded by Celestial Financials. There are no affiliation between Celestial Financials and any merchants listed above.</p>
                         <p>
                         The Celestial Mastercard® Debit Card is provided by The Bancorp Bank, Member FDIC, pursuant to license by Mastercard International Incorporated. Mastercard is a registered trademark, and the circles design is a trademark of Mastercard International Incorporated. Program Management services provided by Galileo Financial Technologies, LLC. 
                         </p>
-                        <Link to="/terms-of-services"><span style={{marginRight:20, color:"black"}}>Terms of Services</span></Link>
-                        <Link to="/privacy-policy"><span style={{marginRight:20, color:"black"}}>Privacy Policy</span></Link>
+                        <Link to="/terms-of-services"><span style={{marginRight:20, color:"black", textDecoration:"underline"}}>Terms of Services</span></Link>
+                        <Link to="/privacy-policy"><span style={{marginRight:20, color:"black", textDecoration:"underline"}}>Privacy Policy</span></Link>
                        
                     </Col>
                     <Col sm={12} md={6}>
