@@ -23,6 +23,11 @@ import faqphone from './faqphone.png'
 import Modal from 'react-modal';
 import MerchantLogo from './MerchantLogo'
 import Fade from 'react-reveal/Fade';
+import stars from './celest.png'
+import lock from './assets/lock.png'
+import money from './assets/money.png'
+import gift from './assets/gift.png'
+import chart from './assets/chart.png'
 const customStyles = {
   content : {
     top                   : '50%',
@@ -94,16 +99,17 @@ const Home = () => {
                 <NavBar hideOptions={false}></NavBar>
                 <div style={{width:"80%", margin:"0 auto"}}>
                 <Row style={{marginTop:50}}>
-                    <Col className="mb-5 mb-md-0"   sm={12} md={7} lg={6} style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+                    <Col className="mb-5 mb-md-0"   sm={12} md={7} lg={7} style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
                     <Fade left>
                         <div style={{width:"100%"}}>
-                            <h1 style={{fontSize:"5vw", marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"left"}}>The Card That Rewards You Based on Your Interests</h1>
-                            <p style={{fontSize:"2.5vh", marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"300", textAlign:"left"}}>The Celestial Card lets you earn rewards every time you swipe, based on your interests. We partner with local and large brands to bring you discounts and rewards. No Fees. No Surprise Charges.</p>
+                            <h1 style={{fontSize:"4.5vw", marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"left"}}>The Card That Rewards You Based On Your Interests</h1>
+                            <p style={{fontSize:"2.5vh", marginBottom:20, fontFamily: "Lato, sans-serif", fontWeight:"300", textAlign:"left"}}>The Celestial Card lets you earn rewards every time you swipe, based on your interests. We partner with local and large brands to bring you discounts and rewards.</p>
+                            <p style={{fontSize:"2.5vh", marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"300", textAlign:"left"}}>No Fees. No Surprise Charges.</p>
                             <form onSubmit={submit}>
-                            <div class="input-group">
-                                <input type="email" class="form-control" placeholder="Email Address" style={{height:50, display:"inline"}} onChange={handleChange}></input>
+                            <div class="input-group" style={{border:"1px solid black", borderRadius:5}}>
+                                <input type="email" class="form-control" placeholder="Email Address" style={{height:50, display:"inline", border:"None"}} onChange={handleChange}></input>
                                 <span class="input-group-btn">
-                                <Button className="vrlps-trigger" style={{fontSize:20, height:50, backgroundColor:"black", display:"inline", borderStyle:"None"}} type="submit">Join Waitlist</Button>
+                                <Button className="vrlps-trigger" style={{fontSize:20, height:50, backgroundColor:"black", display:"inline", border:"None", borderStyle:"None", borderTopLeftRadius:0, borderBottomLeftRadius:0, borderTopRightRadius:5, borderBottomRightRadius:5}} type="submit">Join Waitlist</Button>
                                 </span>
                             
                             </div>
@@ -127,10 +133,10 @@ const Home = () => {
                         </Fade>
                     </Col>           
 
-                    <Col className="mb-sm-5 mb-md-0" sm={12} md={5} lg={6}>
+                    <Col className="mb-sm-5 mb-md-0" sm={12} md={5} lg={5}>
                         <Fade right>
                         <div style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100%"}}>
-                        <img src={iphone} width="65%" alt="Iphone"></img>
+                        <img src={iphone} width="70%" alt="Iphone"></img>
                         </div>
                         </Fade>
                     </Col>
@@ -178,9 +184,9 @@ const Home = () => {
                 <Row style={{}}>
                     <Col md={6}>       
                     <Fade>
-                    <h2 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"left",marginTop:50}}>How it works</h2>
+                    <h2 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"left",marginTop:50}}>How It Works</h2>
                     </Fade>
-                    <Fade top cascade delay={500}>
+                    <Fade delay={500}>
                         <ul>
                             <li style={{marginBottom:40, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>
                                 Each swipe or deposit (at least $50) gets you a chance to win a reward!
@@ -188,7 +194,7 @@ const Home = () => {
                             <li style={{marginBottom:40, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>
                                 Win discounts/cashbacks, in-store credits, and other rewards
                                 <p style={{marginTop:20, fontWeight:700, textDecoration:"underline"}}>Rewards Include:</p>
-                                <Fade top cascade>
+                                <Fade delay={1000}>
                                 <ul>
                                     <li style={{marginBottom:30,fontWeight:700}}>
                                         5% - 25% cashback on purchases
@@ -221,11 +227,55 @@ const Home = () => {
 
                 </Row>
                 </section>
+               
+                <section style={{marginTop:100}}>
+                <hr></hr>
+                <Row>
+
+                    <Col>
+                        <Fade>
+                        <h2 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"left",marginTop:50}}>Wait, There's More</h2>
+                        </Fade>
+                    <Fade delay={500}>
+                    <div style={{marginTop:100}}>
+                    <Row>
+                       
+                        <Col style={{marginBottom:50}} md={3}>
+                        
+                            <img src={lock} width="30%" alt="Iphone"></img>
+                        
+                            <h2 style={{fontSize:30, fontFamily: "Lato, sans-serif", fontWeight:"300",marginTop:50}}>Bank-Grade Security</h2>
+                        </Col>
+                      
+                       
+                        <Col style={{marginBottom:50}} md={3}>
+                        <img src={gift} width="30%" alt="Iphone"></img>
+                        <h2 style={{fontSize:30, fontFamily: "Lato, sans-serif", fontWeight:"300",marginTop:50}}>Send Rewards To Your Friends</h2>
+                        </Col>
+                        
+                       
+                        <Col style={{marginBottom:50}} md={3}>
+                        <img src={money} width="30%" alt="Iphone"></img>
+                        <h2 style={{fontSize:30, fontFamily: "Lato, sans-serif", fontWeight:"300",marginTop:50}}>Earn Interest On Your Money</h2>
+                        </Col>
+                        
+                       
+                        <Col style={{marginBottom:50}} md={3}>
+                        <img src={chart} width="30%" alt="Iphone"></img>
+                        <h2 style={{fontSize:30, fontFamily: "Lato, sans-serif", fontWeight:"300",marginTop:50}}>Track Your Spending</h2>
+                        </Col>
+                        
+                    </Row>
+                    </div>
+                    </Fade>
+                    </Col>
+                </Row>
+                </section>
                 
                 <section id="f&q" style={{marginTop:100}}>
                     <hr></hr>
                     <Row>
-                    <Col md={6}>       
+                    <Col md={8}>       
                         <Fade>
                         <h2 style={{fontSize:50, marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"left",marginTop:50}}>Frequently Asked Questions</h2>
                         </Fade>
@@ -253,11 +303,11 @@ const Home = () => {
                         </ul>
                         </Fade>
                     </Col>
-                    <Col md={6}>
+                    {/* <Col md={6}>
                     <div style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100%"}}>
                         <img src={faqphone} width="65%" alt="Home"></img>
                         </div>
-                    </Col>
+                    </Col> */}
                     </Row>
                 </section>
                 </div>
@@ -279,11 +329,11 @@ const Home = () => {
                     <div style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100%"}}>
                     <div>
                         <h1 style={{fontSize:50,  fontFamily: "Lato, sans-serif", fontWeight:"300"}}>Join the waitlist</h1>
-                           <form onSubmit={submit}>
-                            <div class="input-group" style={{marginTop:30}}>
-                                <input type="email" class="form-control" placeholder="Email Address" style={{height:50, display:"inline"}} onChange={handleChange}></input>
+                           <form onSubmit={submit} style={{marginTop:30}}>
+                            <div class="input-group" style={{border:"1px solid black", borderRadius:5}}>
+                                <input type="email" class="form-control" placeholder="Email Address" style={{height:50, display:"inline", border:"None"}} onChange={handleChange}></input>
                                 <span class="input-group-btn">
-                                <Button className="vrlps-trigger" style={{fontSize:20, height:50, backgroundColor:"black", display:"inline", borderStyle:"None"}} type="submit">Join Waitlist</Button>
+                                <Button className="vrlps-trigger" style={{fontSize:20, height:50, backgroundColor:"black", display:"inline", border:"None", borderStyle:"None", borderTopLeftRadius:0, borderBottomLeftRadius:0, borderTopRightRadius:5, borderBottomRightRadius:5}} type="submit">Join Waitlist</Button>
                                 </span>
                             
                             </div>
