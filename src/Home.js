@@ -117,8 +117,10 @@ const Home = () => {
                 <Row>
                     <Col sm={12} md={2} >       
                         <div style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100%"}}>
+                        <div>
                         <h2 style={{fontSize:40, textAlign:"left"}}>Cashbacks & Rewards</h2>
-                        
+                        <p>(At least 5%)</p>
+                        </div>
                         </div>
                     </Col>
                     <Col sm={12} md={10}>       
@@ -149,6 +151,18 @@ const Home = () => {
                             </li>
                             <li style={{marginBottom:50, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>
                                 Win discounts/cashbacks, in-store credits, and other exclusive rewards
+                                <p style={{marginTop:20, fontWeight:700, textDecoration:"underline"}}>Rewards Include:</p>
+                                <ul>
+                                    <li style={{marginBottom:30,fontWeight:700}}>
+                                        5% - 25% cashback on purchases
+                                    </li>
+                                    <li style={{marginBottom:30,fontWeight:700}}>
+                                        Up to 200 dollar In-Store Credit
+                                    </li>
+                                    <li style={{marginBottom:30,fontWeight:700}}>
+                                        Shopping sprees up to $1000
+                                    </li>
+                                </ul>
                             </li>
                             <li style={{marginBottom:50, textAlign:"left", fontSize:20, fontFamily: "Lato, sans-serif", fontWeight:"900"}}>
                                 Guaranteed rewards every time
