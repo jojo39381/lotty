@@ -224,6 +224,7 @@ const Home = () => {
                 <Row>
                     <Col className="mb-sm-5 mb-md-0" style={{textAlign:"left"}} sm={12} md={6}>
                         <h1 style={{fontSize:50,  fontFamily: "Lato, sans-serif", fontWeight:"300"}}>Celestial</h1>
+                        <p>All rewards and cashback at merchants are funded by Celestial Financials. There are no affiliation between Celestial Financials and any merchants listed above.</p>
                         <p>
                         The Celestial Mastercard® Debit Card is provided by The Bancorp Bank, Member FDIC, pursuant to license by Mastercard International Incorporated. Mastercard is a registered trademark, and the circles design is a trademark of Mastercard International Incorporated. Program Management services provided by Galileo Financial Technologies, LLC. Spend anywhere Mastercard is accepted.
                         </p>
