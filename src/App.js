@@ -1,8 +1,5 @@
 
 import './App.css';
-
-import Landing from './Landing.js'
-
 import Home from './Home.js'
 import TermsOfServices from './TermsOfServices'
 import PrivacyPolicy from './PrivacyPolicy'

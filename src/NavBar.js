@@ -1,8 +1,8 @@
 import React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import Logo from './logo.png'
-import Brand from './brand.png'
+
+
 const NavBar = ({hideOptions}) => {
     return (
         <Navbar expand="lg" style={{height: 100, backgroundColor: "clear", fontFamily:'Lato'}}>
@@ -10,7 +10,7 @@ const NavBar = ({hideOptions}) => {
         {/* <img src={Brand} width="180" height="75"></img> */}
         <h1 style={{fontSize:50}}>Celestial</h1>
         </Navbar.Brand>
-        {hideOptions == false &&
+        {hideOptions === false &&
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
            <Nav.Link href="#rewards" style={{color:"black", fontSize:20, fontWeight: "bold", margin: 30}}>Rewards</Nav.Link>

@@ -3,14 +3,11 @@ import NavBar from './NavBar.js'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import {saveEmail} from './actions/save.js'
-import Carousel from 'react-bootstrap/Carousel'
+// import Carousel from 'react-bootstrap/Carousel'
 import iphone from './rewards.png'
 import otheriphone from './otheriphone.png'
-import lock from './lock.svg'
-import boring from './boring.svg'
 import { Link } from 'react-router-dom';
 import victoria from './assets/victoria.png'
 import ttoust from './assets/ttoust.png'
@@ -22,18 +19,20 @@ import imm from './assets/imm.png'
 import hm from './assets/h&m.png'
 import gongcha from './assets/gongcha.png'
 import forever from './assets/forever.png'
-
+import faqphone from './faqphone.png'
 const logoStyle = {
     margin:10
 }
 const Home = () => {
     const [contact, setContact] = useState("")
     function submit(event) {
+       
         saveEmail(contact)
         event.preventDefault()
     }
     function handleChange(event) {
         setContact(event.target.value)
+        
     }
     return (
         <div>
@@ -47,12 +46,15 @@ const Home = () => {
                         <div style={{width:"100%"}}>
                             <h1 style={{fontSize:"5vw", marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"left"}}>The Card That Rewards You Based on Your Interests</h1>
                             <p style={{fontSize:"2.5vh", marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"300", textAlign:"left"}}>The Celestial Card lets you earn rewards every time you swipe, based on your interests. We partner with local and large brands to bring you discounts and rewards. No Fees. No Suprise Charges.</p>
+                            <form onSubmit={submit}>
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Email Address" style={{height:50, display:"inline"}}></input>
+                                <input type="email" class="form-control" placeholder="Email Address" style={{height:50, display:"inline"}} onChange={handleChange}></input>
                                 <span class="input-group-btn">
-                                <Button type="button" className="vrlps-trigger" style={{fontSize:20, height:50, backgroundColor:"black", display:"inline", borderStyle:"None"}}>Join Waitlist</Button>
+                                <Button className="vrlps-trigger" style={{fontSize:20, height:50, backgroundColor:"black", display:"inline", borderStyle:"None"}} type="submit">Join Waitlist</Button>
                                 </span>
+                            
                             </div>
+                            </form>
                             
                             
                             
@@ -62,7 +64,7 @@ const Home = () => {
 
                     <Col className="mb-sm-5 mb-md-0" sm={12} md={5} lg={6}>
                         <div style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100%"}}>
-                        <img src={iphone} width="65%"></img>
+                        <img src={iphone} width="65%" alt="Iphone"></img>
                         </div>
                     </Col>
                 </Row>
@@ -79,16 +81,16 @@ const Home = () => {
                         </div>
                     </Col>
                     <Col sm={12} md={10}>       
-                        <img style={logoStyle} src={victoria} width="150px" height="100px"></img>
-                        <img style={logoStyle} src={ttoust} width="150px" height="100px"></img>
-                        <img style={logoStyle} src={tptea} width="150px" height="100px"></img>
-                        <img style={logoStyle} src={sliverpizza} width="150px" height="100px"></img>
-                        <img style={logoStyle} src={philz} width="150px" height="100px"></img>
-                        <img style={logoStyle} src={lululemon} width="150px" height="100px"></img>
-                        <img style={logoStyle} src={imm} width="150px" height="100px"></img>
-                        <img style={logoStyle} src={hm} width="150px" height="100px"></img>
-                        <img style={logoStyle} src={gongcha} width="150px" height="100px"></img>
-                        <img style={logoStyle} src={forever} width="150px" height="100px"></img>
+                        <img style={logoStyle} src={victoria} width="150px" height="100px" alt="Logo"></img>
+                        <img style={logoStyle} src={ttoust} width="150px" height="100px" alt="Logo"></img>
+                        <img style={logoStyle} src={tptea} width="150px" height="100px" alt="Logo"></img>
+                        <img style={logoStyle} src={sliverpizza} width="150px" height="100px" alt="Logo"></img>
+                        <img style={logoStyle} src={philz} width="150px" height="100px" alt="Logo"></img>
+                        <img style={logoStyle} src={lululemon} width="150px" height="100px" alt="Logo"></img>
+                        <img style={logoStyle} src={imm} width="150px" height="100px" alt="Logo"></img>
+                        <img style={logoStyle} src={hm} width="150px" height="100px" alt="Logo"></img>
+                        <img style={logoStyle} src={gongcha} width="150px" height="100px" alt="Logo"></img>
+                        <img style={logoStyle} src={forever} width="150px" height="100px" alt="Logo"></img>
                     </Col>
                     
 
@@ -118,7 +120,7 @@ const Home = () => {
                     </Col>
                     <Col className="mb-sm-5 mb-md-0"  md={6}>
                     <div style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100%"}}>
-                        <img src={otheriphone} width="65%"></img>
+                        <img src={otheriphone} width="65%" alt="Iphone"></img>
                         </div>
                     </Col>
                     
@@ -153,7 +155,11 @@ const Home = () => {
                             
                         </ul>
                     </Col>
-                    
+                    <Col md={6}>
+                    <div style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100%"}}>
+                        <img src={faqphone} width="65%" alt="Home"></img>
+                        </div>
+                    </Col>
                     </Row>
                 </section>
                 </div>
@@ -161,7 +167,7 @@ const Home = () => {
             </Container>
             <footer style={{padding:50}}>
                 <Row>
-                    <Col  style={{textAlign:"left"}} sm={12} md={6}>
+                    <Col className="mb-sm-5 mb-md-0" style={{textAlign:"left"}} sm={12} md={6}>
                         <h1 style={{fontSize:50,  fontFamily: "Lato, sans-serif", fontWeight:"300"}}>Celestial</h1>
                         <p>
                         The Celestial Mastercard® Debit Card is provided by The Bancorp Bank, Member FDIC, pursuant to license by Mastercard International Incorporated. Mastercard is a registered trademark, and the circles design is a trademark of Mastercard International Incorporated. Program Management services provided by Galileo Financial Technologies, LLC. Spend anywhere Mastercard is accepted.
@@ -174,12 +180,15 @@ const Home = () => {
                     <div style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100%"}}>
                     <div>
                         <h1 style={{fontSize:50,  fontFamily: "Lato, sans-serif", fontWeight:"300"}}>Join the waitlist</h1>
+                           <form onSubmit={submit}>
                             <div class="input-group" style={{marginTop:30}}>
-                                    <input type="text" class="form-control" placeholder="Email Address" style={{height:50, display:"inline"}}></input>
-                                    <span class="input-group-btn">
-                                    <Button type="button" className="vrlps-trigger" style={{fontSize:20, height:50, backgroundColor:"black", display:"inline", borderStyle:"None"}}>Join Waitlist</Button>
-                                    </span>
-                                </div>
+                                <input type="email" class="form-control" placeholder="Email Address" style={{height:50, display:"inline"}} onChange={handleChange}></input>
+                                <span class="input-group-btn">
+                                <Button className="vrlps-trigger" style={{fontSize:20, height:50, backgroundColor:"black", display:"inline", borderStyle:"None"}} type="submit">Join Waitlist</Button>
+                                </span>
+                            
+                            </div>
+                            </form>
                             </div>
                         </div>
                     </Col>
