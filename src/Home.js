@@ -103,7 +103,7 @@ const Home = () => {
                     <Col className="mb-5 mb-md-0"   sm={12} md={7} lg={7} style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
                     <Fade left>
                         <div style={{width:"100%"}}>
-                            <h1 style={{fontSize:"4.5vw", marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"left"}}>The Debit Card That Rewards You Based On Your Interests</h1>
+                            <h1 style={{fontSize:"4.7vw", marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"left"}}>The Debit Card That Rewards You Based On Your Interests</h1>
                             <p style={{fontSize:"2.5vh", marginBottom:20, fontFamily: "Lato, sans-serif", fontWeight:"300", textAlign:"left"}}>The Celestial Card lets you earn rewards every time you swipe, based on your interests. We partner with both local and large brands to bring you discounts and rewards.</p>
                             <p style={{fontSize:"2.5vh", marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"300", textAlign:"left"}}>No Fees. No Surprise Charges.</p>
                             <form onSubmit={submit}>
