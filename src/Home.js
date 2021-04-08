@@ -220,6 +220,7 @@ const Home = () => {
                         </Fade>
                     </Col>
                     <Col className="mb-sm-5 mb-md-0"  md={6}>
+                    <Fade delay={500}>
                     <div style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100%"}}>
                     <Carousel style={{width:"100%", height:"100%", padding:30}}>
                         <Carousel.Item interval={1000} style={{width:"100%", height:"100%"}}>
@@ -245,6 +246,7 @@ const Home = () => {
                       
                     </Carousel>
                         </div>
+                        </Fade>
                     </Col>
                     
 
