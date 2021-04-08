@@ -5,9 +5,10 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 import {saveEmail} from './actions/save.js'
-// import Carousel from 'react-bootstrap/Carousel'
+import Carousel from 'react-bootstrap/Carousel'
 import iphone from './rewards.png'
 import otheriphone from './assets/otheriphone.png'
+import anotherphone from './assets/choose.png'
 import { Link } from 'react-router-dom';
 import victoria from './assets/victoria.png'
 import ttoust from './assets/ttoust.png'
@@ -136,7 +137,7 @@ const Home = () => {
                     <Col className="mb-sm-5 mb-md-0" sm={12} md={5} lg={5}>
                         <Fade right>
                         <div style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100%"}}>
-                        <img src={iphone} width="70%" alt="Iphone"></img>
+                        <img src={anotherphone} width="70%" alt="Iphone"></img>
                         </div>
                         </Fade>
                     </Col>
@@ -220,7 +221,29 @@ const Home = () => {
                     </Col>
                     <Col className="mb-sm-5 mb-md-0"  md={6}>
                     <div style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100%"}}>
-                        <img src={otheriphone} width="65%" alt="Iphone"></img>
+                    <Carousel style={{width:"100%", height:"100%", padding:30}}>
+                        <Carousel.Item interval={1000} style={{width:"100%", height:"100%"}}>
+                            <img
+                            width="70%"
+                            src={iphone}
+                            alt="First slide"
+                            style={{display:"inline-block", margin:30}}
+                            />
+                            <h2 style={{display:"inline-block"}}>1. Swipe</h2>
+                        </Carousel.Item>
+                        <Carousel.Item interval={1000} style={{width:"100%", height:"100%"}}>
+                            <img
+                            width="70%"
+                            src={otheriphone}
+                            alt="First slide"
+                            style={{display:"inline-block", margin:30}}
+                            />
+                            <h2 style={{display:"inline-block"}}>2. Earn!</h2>
+                        </Carousel.Item>
+                       
+                      
+                      
+                    </Carousel>
                         </div>
                     </Col>
                     
@@ -315,7 +338,7 @@ const Home = () => {
             </Container>
             <footer style={{padding:50, borderTop:"1px solid", marginTop:100}}>
                 <Row>
-                    <Col style={{marginBottom:30}} className="mb-sm-5 mb-md-0" style={{textAlign:"left"}} sm={12} md={6}>
+                    <Col className="mb-sm-5 mb-md-5" style={{textAlign:"left", marginBottom:50}} sm={12} md={6}>
                         <h1 style={{fontSize:50,  fontFamily: "Lato, sans-serif", fontWeight:"300"}}>Celestial</h1>
                         <p>All rewards and cashback at merchants are funded by Celestial Financials. There are no affiliation between Celestial Financials and any merchants listed above.</p>
                         <p>
