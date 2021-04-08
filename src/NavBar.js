@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav'
 
 const NavBar = ({hideOptions}) => {
     return (
-        <Navbar expand="lg" style={{height: 100, backgroundColor: "clear", fontFamily:'Lato'}}>
+        <Navbar expand="lg" style={{width:"90%", margin:"0 auto", height: 100, backgroundColor: "clear", fontFamily:'Lato'}}>
         <Navbar.Brand href="/">
         {/* <img src={Brand} width="180" height="75"></img> */}
         <h1 style={{fontSize:50}}>Celestial</h1>

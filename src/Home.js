@@ -223,7 +223,7 @@ const Home = () => {
                     <Fade delay={500}>
                     <div style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100%"}}>
                     <Carousel style={{width:"100%", height:"100%", padding:30}}>
-                        <Carousel.Item interval={1000} style={{width:"100%", height:"100%"}}>
+                        <Carousel.Item interval={2000} style={{width:"100%", height:"100%"}}>
                             <img
                             width="70%"
                             src={iphone}
@@ -232,7 +232,7 @@ const Home = () => {
                             />
                             <h2 style={{display:"inline-block"}}>1. Swipe</h2>
                         </Carousel.Item>
-                        <Carousel.Item interval={1000} style={{width:"100%", height:"100%"}}>
+                        <Carousel.Item interval={2000} style={{width:"100%", height:"100%"}}>
                             <img
                             width="70%"
                             src={otheriphone}
