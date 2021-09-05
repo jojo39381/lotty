@@ -1,21 +1,21 @@
 import React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-
+import Logo from './assets/logo.svg'
 
 const NavBar = ({hideOptions}) => {
     return (
-        <Navbar expand="lg" style={{width:"90%", margin:"0 auto", height: 100, backgroundColor: "clear", fontFamily:'Lato'}}>
+        <Navbar expand="lg" style={{width:"100%", margin:"0 auto", height: 200, backgroundColor:"#0984E3", fontFamily:'Lato'}}>
         <Navbar.Brand href="/">
-        {/* <img src={Brand} width="180" height="75"></img> */}
-        <h1 style={{fontSize:50}}>Celestial</h1>
+        <img src={Logo} width="200" height="90"></img>
+       
         </Navbar.Brand>
         {hideOptions === false &&
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto">
-           <Nav.Link href="#rewards" style={{color:"black", fontSize:20, fontWeight: "bold", margin: 30}}>Rewards</Nav.Link>
-            <Nav.Link href="#how_it_works" style={{color:"black", fontSize:20, fontWeight: "bold", margin: 30}}>How It Works</Nav.Link>
-            <Nav.Link href="#f&q" style={{color:"black", fontSize:20, fontWeight: "bold", margin: 30}}>Frequently Asked Questions</Nav.Link>
+          <Nav className="ml-auto" style={{marginTop:"10px"}}>
+           <Nav.Link href="#rewards" style={{color:"black", fontSize:20, fontWeight: "bold", margin: 30, color:"white"}}>Rewards</Nav.Link>
+            <Nav.Link href="#how_it_works" style={{color:"black", fontSize:20, fontWeight: "bold", margin: 30, color:"white"}}>How It Works</Nav.Link>
+            <Nav.Link href="#f&q" style={{color:"black", fontSize:20, fontWeight: "bold", margin: 30, color:"white"}}>Frequently Asked Questions</Nav.Link>
             
           </Nav>
           
