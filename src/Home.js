@@ -112,7 +112,7 @@ const Home = () => {
                     <Col className="mb-5 mb-md-0"   sm={12} md={7} lg={7} style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
                     <Fade left>
                         <div style={{width:"100%"}}>
-                            <h1 style={{fontSize:"4.7vw", marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"left", color:"white"}}>Banking for All.</h1>
+                            <h1 style={{fontSize:"5.2vw", marginBottom:30, fontFamily: "Lato, sans-serif", fontWeight:"900", textAlign:"left", color:"white"}}>Banking for All.</h1>
                             <p style={{fontSize:"4vh", marginBottom:20, fontFamily: "Lato, sans-serif", fontWeight:"300", textAlign:"left", color:"white"}}>No Fees.</p>
                             <p style={{fontSize:"4vh", marginBottom:20, fontFamily: "Lato, sans-serif", fontWeight:"300", textAlign:"left", color:"white"}}>Free Payroll Advance.</p>
                             <p style={{fontSize:"4vh", marginBottom:20, fontFamily: "Lato, sans-serif", fontWeight:"300", textAlign:"left", color:"white"}}>Smart Budgeting.</p>
@@ -208,7 +208,7 @@ const Home = () => {
                 
                 <div style={{width:"80%", margin:"0 auto"}}>
                 <Row>
-                 <Col className="mb-sm-5 mb-md-0" sm={12} md={6} lg={6}>
+                 <Col className="mb-sm-5 mb-md-0" sm={{span:12, order:"first"}} md={6} lg={6}>
                         <Fade>
                         <div style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100%"}}>
                         <div>
@@ -218,7 +218,7 @@ const Home = () => {
                         </div>
                         </Fade>
                     </Col>
-                    <Col className="mb-sm-5 mb-md-0" sm={12} md={6} lg={6}>
+                    <Col className="mb-sm-5 mb-md-0" sm={{span:12, order:"last"}} md={6} lg={6}>
                         <Fade>
                         <div style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100%"}}>
                            
@@ -235,7 +235,7 @@ const Home = () => {
                 
                 <div style={{width:"80%", margin:"0 auto"}}>
                 <Row>
-                <Col className="mb-sm-5 mb-md-0" sm={12} md={6} lg={6}>
+                <Col className="mb-sm-5 mb-md-0" sm={{span:12, order:"last"}} md={{span:6, order:"first"}} lg={6}>
                         <Fade>
                             <div style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100%"}}>
                          
@@ -245,7 +245,7 @@ const Home = () => {
                             </div>
                         </Fade>
                     </Col>
-                    <Col className="mb-sm-5 mb-md-0" sm={12} md={6} lg={6}>
+                    <Col className="mb-sm-5 mb-md-0" sm={{span:12, order:"first"}} md={{span:6, order:"last"}} lg={6}>
                         <Fade>
                         <div style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100%"}}>
                             <div>
@@ -262,7 +262,7 @@ const Home = () => {
                 
                 <div style={{width:"80%", margin:"0 auto"}}>
                 <Row>
-                    <Col className="mb-sm-5 mb-md-0" sm={12} md={6} lg={6}>
+                    <Col className="mb-sm-5 mb-md-0" sm={{span:12, order:"first"}} md={6} lg={6}>
                         <Fade>
                         <div style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100%"}}>
                         <div>
@@ -272,7 +272,7 @@ const Home = () => {
                         </div>
                         </Fade>
                     </Col>
-                    <Col className="mb-sm-5 mb-md-0" sm={12} md={6} lg={6}>
+                    <Col className="mb-sm-5 mb-md-0" sm={{span:12, order:"last"}} md={6} lg={6}>
                         <Fade>
                         <div style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100%"}}>
                            
@@ -290,7 +290,7 @@ const Home = () => {
                 
                 <div style={{width:"80%", margin:"0 auto"}}>
                 <Row>
-                <Col className="mb-sm-5 mb-md-0" sm={12} md={6} lg={6}>
+                <Col className="mb-sm-5 mb-md-0" sm={{span:12, order:"last"}} md={{span:6, order:"first"}} lg={6}>
                         <Fade>
                         <div style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100%"}}>
                     
@@ -300,7 +300,7 @@ const Home = () => {
                         </div>
                         </Fade>
                     </Col>
-                    <Col className="mb-sm-5 mb-md-0" sm={12} md={6} lg={6}>
+                    <Col className="mb-sm-5 mb-md-0" sm={{span:12, order:"first"}} md={{span:6, order:"last"}} lg={6}>
                         <Fade>
                         <div style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100%"}}>
                         <div>
