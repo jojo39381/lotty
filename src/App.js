@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import textFile from "./app-ads.txt";
 
 function App() {
+  const reload = () => window.location.reload();
   return (
     <div className="App">
       <BrowserRouter>
@@ -13,7 +14,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/terms-of-services" component={TermsOfServices} />
           <Route path="/privacy-policy" component={PrivacyPolicy} />
-          <Route path="/app-ads.txt" component={textFile} />
+          <Route path="/app-ads.txt" onEnter={reload} />
         </Switch>
       </BrowserRouter>
     </div>
