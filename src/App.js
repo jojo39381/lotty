@@ -3,7 +3,7 @@ import Home from "./Home.js";
 import TermsOfServices from "./TermsOfServices";
 import PrivacyPolicy from "./PrivacyPolicy";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import textFile from "./app-ads.txt";
+// import textFile from "./app-ads.txt";
 
 function App() {
   const reload = () => window.location.reload();
