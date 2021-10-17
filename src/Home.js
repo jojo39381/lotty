@@ -316,7 +316,7 @@ const Home = () => {
                 </section>
                 */}
 
-        <section style={{ paddingTop: 120, paddingBottom: 120 }}>
+        <section id="benefits" style={{ paddingTop: 120, paddingBottom: 120 }}>
           <div style={{ width: "80%", margin: "0 auto" }}>
             <Row>
               <Col
@@ -581,6 +581,52 @@ const Home = () => {
                         No credit or poor credit? No worries. We help you build
                         credit by reporting your monthly reoccuring expenses to
                         the credit bureaus free of charge.
+                      </h3>
+                    </div>
+                  </div>
+                </Fade>
+              </Col>
+            </Row>
+          </div>
+        </section>
+        <section id="mission" style={{ paddingTop: 120, paddingBottom: 120 }}>
+          <div style={{ width: "80%", margin: "0 auto" }}>
+            <Row>
+              <Col
+                className="mb-sm-5 mb-md-0"
+                sm={{ span: 12, order: "first" }}
+                md={12}
+                lg={12}
+              >
+                <Fade>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      height: "100%",
+                    }}
+                  >
+                    <div>
+                      <h2
+                        style={{
+                          fontSize: 50,
+                          marginBottom: 30,
+                          fontFamily: "Lato, sans-serif",
+                          fontWeight: "900",
+                          textAlign: "left",
+                          marginTop: 50,
+                        }}
+                      >
+                        Our Mission
+                      </h2>
+                      <h3 style={{ textAlign: "left" }}>
+                        Our mission is to provide financial access to every
+                        person, regardless of where they are from and what kind
+                        of financial history you have. We want to make it easy
+                        for everyone to get paid, manage money, gain financial
+                        literacy, and build credit. Join us on the journey to
+                        make financial services equitable for all.
                       </h3>
                     </div>
                   </div>

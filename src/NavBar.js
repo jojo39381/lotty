@@ -35,7 +35,7 @@ const NavBar = ({ hideOptions }) => {
             }}
           >
             <Nav.Link
-              href="#rewards"
+              href="#benefits"
               style={{
                 color: "black",
                 fontSize: 20,
@@ -47,7 +47,7 @@ const NavBar = ({ hideOptions }) => {
               <div>Benefits</div>
             </Nav.Link>
             <Nav.Link
-              href="#how_it_works"
+              href="#mission"
               style={{
                 color: "black",
                 fontSize: 20,
@@ -59,7 +59,6 @@ const NavBar = ({ hideOptions }) => {
               <div>Our Mission</div>
             </Nav.Link>
             <Nav.Link
-              href="#f&q"
               style={{
                 fontSize: 20,
                 fontWeight: "bold",
