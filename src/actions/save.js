@@ -1,11 +1,11 @@
 import axios from "axios";
 
 export const saveEmail = async (email) => {
-    var params = {"email":email}
-    var response = await axios.post("https://jcrdj9rb.brev.dev/api/api/emails", params)
-    
-    return response.status
+  var params = { api_key: "PP7MKZ", email: email, referral_link: document.URL };
+  var response = await axios.post(
+    "https://getwaitlist.com/api/v1/waitlists/submit",
+    params
+  );
 
-    
-    
-}
+  return response.data;
+};
